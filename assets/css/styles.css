@@ -1,0 +1,16 @@
+body { font-family: 'Segoe UI', sans-serif; background: #f4f4f9; text-align: center; }
+.container { max-width: 800px; margin: 20px auto; background: white; padding: 20px; border-radius: 8px; shadow: 0 4px 6px rgba(0,0,0,0.1); }
+
+.pantalla { background: #333; color: white; margin: 20px auto; width: 80%; padding: 5px; border-radius: 5px; }
+
+/* Estilo de los asientos en el SVG */
+.asiento { cursor: pointer; transition: fill 0.3s; stroke: #fff; stroke-width: 1; }
+.asiento.disponible { fill: #2ecc71; }
+.asiento.seleccionado { fill: #3498db; }
+.asiento.vendido { fill: #e74c3c; cursor: not-allowed; }
+.asiento:hover:not(.vendido) { opacity: 0.8; }
+
+#leyenda { margin: 20px; display: flex; justify-content: center; gap: 15px; }
+.bolita { width: 15px; height: 15px; border-radius: 50%; display: inline-block; }
+#btn-confirmar { padding: 10px 20px; font-size: 1rem; background: #2ecc71; color: white; border: none; border-radius: 5px; cursor: pointer; }
+#btn-confirmar:disabled { background: #ccc; }
